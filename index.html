@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body>
+<h1 id=title>Dogs and the breezes beneath their ears</h1>
+<h3 id=subtitle>Do dogs like air being blown in their faces: a survey.</h3>
+<p id=description>The picture of a dog with his head out the window, ears flapping in the wind, is a classic. But do all dogs actually enjoy air being blown into their faces? Join us as we survey dogs to find out.
+  <div>
+    <img id=windy-dog alt="Dog with wind in his face" src="http://1.bp.blogspot.com/-V4_OSccQy5c/UTBTnA3H9GI/AAAAAAAAe7A/PmrVkae601s/s1600/916b6fe1401c745fb62f14c2c1db9b6f.jpg">
+    <figcaption>A dog with wind in his face</figcaption>
+  <form id=survey-form action="/submit-survey">
+    <label for=Name id=name-label>Name:</label><br>
+    <input id=name type=text placeholder=Name required><br>
+    <label for=Email id=email-label>Email:</label><br>
+    <input id=email type="email" placeholder=Email required><br>
+    <label for=number id=number-label>Number of dogs surveyed:</label><br>
+    <input id=number type=number placeholder=Num min=0 max=9><br>
+    <p>Were you able to blow in your dog's face?</p>
+    <label><input type="radio" name="yes-no" value="Yes">Yes</label>
+    <label><input type="radio" name="yes-no" value="No">No</label><br>
+    <p>What was their reaction?</p>
+    <label><input type="checkbox" name="reactions" value="Shook Head">Shook Head</label>
+    <label><input type="checkbox" name="reactions" value="Pulled Back">Pulled Back</label>
+    <label><input type="checkbox" name="reactions" value="Ran Away">Ran Away</label>
+    <label><input type="checkbox" name="reactions" value="Other">Other (please add additional comments)</label><br>
+    <p>Did they enjoy it?</p>
+    <select id=dropdown name="enjoyment">
+      <option value="Yes">Yes</option>
+      <option value="Tolerated it">Tolerated It</option>
+      <option value="Not at all">Not at all</option>
+    </select><br>
+    <textarea placeholder="Additional comments"></textarea><br>
+    <button id=submit type="Submit">Submit</button>
+    </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
